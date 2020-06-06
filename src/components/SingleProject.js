@@ -12,6 +12,7 @@ const SingleProject = (props) => {
                     <div className="content project-content">
 
                         <div className="project-landing">
+                            <Fade>
                             <div className=" project-headings">
                                 <h1>{item.title}</h1>
                                 <p>{item.shortDesc}</p>
@@ -23,11 +24,11 @@ const SingleProject = (props) => {
                             </div>
                             
                             <img className="feat-img" src={item.featuredImg} alt="Project featured image"></img>
-
+                            </Fade>
                         </div>
 
                         
-                            <div className="section project-overview">
+                            <section className="project-overview">
                                 <Fade bottom>
                                     <h2>Overview</h2>
                                     <hr/>
@@ -36,12 +37,12 @@ const SingleProject = (props) => {
                                 <Fade bottom>
                                     <p>{item.overview}</p>
                                 </Fade>
-                            </div>
+                            </section>
                         
 
                         
                         <div className="group">
-                            <div className="section project-tools">
+                            <section className="project-tools">
                                 <Fade bottom>
                                     <h2>Languages / Tools</h2>
                                     <hr/>
@@ -55,10 +56,10 @@ const SingleProject = (props) => {
                                     </ul>
                                 </Fade>
                                 
-                            </div>
+                            </section>
 
                             {item.members &&
-                            <div className="section project-members">
+                            <section className="project-members">
                                 <Fade bottom>
                                     <h2>Development Team</h2>
                                     <hr/>
@@ -71,14 +72,14 @@ const SingleProject = (props) => {
                                         ))}
                                     </ul>
                                 </Fade>
-                            </div> 
+                            </section> 
                         }
                         </div>
                         
 
                         
                         {item.responsibilities &&
-                            <div className="section project-resp">
+                            <section className="project-resp">
                                 <Fade bottom>
                                     <h2>Responsibilities</h2>
                                     <hr/>
@@ -90,11 +91,11 @@ const SingleProject = (props) => {
                                     ))}
                                 </ul>
                                 </Fade>
-                            </div> 
+                            </section> 
                             
                         }
                         
-                        <div className="section project-screenshots">
+                        <section className="project-screenshots">
                             <Fade bottom>
                                 <h2>Design</h2>
                                 <hr/>
@@ -104,12 +105,13 @@ const SingleProject = (props) => {
                                     {item.colours &&
                                         <div className="colour-scheme">
                                             {item.colours.map((color, i) => (
-                                                <Fade>
-                                                    <div>
-                                                        <span className="dot" style={{backgroundColor: color}}></span>
-                                                        <p>{color}</p>
-                                                    </div>
-                                                </Fade>
+
+                                                <div>
+                                                    <Fade>
+                                                    <span className="dot" style={{backgroundColor: color}}></span>
+                                                    <p>{color}</p>
+                                                    </Fade>
+                                                </div>
                                             ))}
                                         </div>
                                     }
@@ -120,10 +122,10 @@ const SingleProject = (props) => {
                             ))}
                             </div>
                             
-                        </div>
+                        </section>
                         
                         
-                        <div className="section project-code">
+                        <section className="project-code">
                             <Fade bottom>
                                 <h2>Code Snippet</h2>
                                 <hr/>
@@ -134,7 +136,7 @@ const SingleProject = (props) => {
                                     {item.codeSnippets}
                                 </SyntaxHighlighter>
                             </Fade>
-                        </div>
+                        </section>
                         
 
                     </div>

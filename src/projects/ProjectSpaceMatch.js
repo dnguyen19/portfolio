@@ -52,11 +52,9 @@ const projectInfo = [
 
 const ProjectSpaceMatch = () => {
     return (
-        <div>
-            <Project 
-                project={projectInfo}
-            />
-        </div>
+        <Project 
+            project={projectInfo}
+        />
     );
 }
 

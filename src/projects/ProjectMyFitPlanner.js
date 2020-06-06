@@ -94,11 +94,9 @@ const projectInfo = [
 
 const ProjectMyFitPlanner = () => {
     return (
-        <div>
             <Project 
                 project={projectInfo}
             />
-        </div>
     );
 }
 

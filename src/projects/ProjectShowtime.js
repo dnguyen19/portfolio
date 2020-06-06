@@ -62,11 +62,9 @@ const projectInfo = [
 
 const ProjectShowtime = () => {
     return (
-        <div>
-            <Project 
-                project={projectInfo}
-            />
-        </div>
+        <Project 
+            project={projectInfo}
+        />
     );
 }
 

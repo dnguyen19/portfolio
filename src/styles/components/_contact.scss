@@ -1,0 +1,15 @@
+.contact {
+    text-align: center;
+    padding: 50px;
+    padding-top: 100px;
+    color: $textColor;
+    position: relative;
+    z-index: 1;
+    
+    p {
+        margin-bottom: 40px;
+    }
+    a {
+        @include main-btn();
+    }
+}

@@ -1,0 +1,24 @@
+.wrapper {
+    background-color: $bgColor;
+    
+    .content {
+        // padding: 20px;
+
+        h1, h2, h3, p, li {
+            color: $textColor;
+        }
+    }
+
+    hr {
+        margin: 0;
+        width: 60px;
+        border: 2px solid $blueColor;
+        margin-bottom: 40px;
+    }
+
+
+
+    button {
+        padding: 10px 20px;
+    }
+}

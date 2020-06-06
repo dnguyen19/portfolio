@@ -1,0 +1,151 @@
+.project-page {
+    padding-top: 20px;
+}
+.back-to-home a {
+    color: $blueColor;
+    text-decoration: none;
+    position: relative;
+    z-index: 999;
+    padding: 10px;
+    svg {
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+
+.single-project {
+    position: relative;
+
+    .feat-img {
+        
+        
+        // width: 100%;
+        // background-position: top;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+    }
+    .content {
+        hr{
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 70px;
+        }
+
+        .project-headings {
+            text-align: center;
+        }
+
+        .project-buttons {
+            text-align: center;
+            margin: 50px 0;
+            
+                a{
+                    &:first-of-type{
+                        @include main-btn();
+                        background-color: $blueColor;
+                        color: $bgColor;
+                        padding: 10px 20px;
+                    }
+
+                    &:last-of-type{
+                        @include main-btn();
+                        padding: 10px 20px;
+                    }
+
+                    button {
+                        margin: 0 20px;
+                    }
+                }
+            
+        }
+
+        .screenshot-container{
+            background-color: $blueShade;
+            text-align: center;
+            img {
+                width:83%;
+                margin:30px;
+            }
+            .colour-scheme{
+                display: flex;
+                justify-content: center;
+                .dot {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin: 20px;
+                    margin-top: 80px;
+                  }
+
+            }
+        }
+    }
+    
+}
+
+@media(min-width: $tabletBreakpoint){
+    .project-page {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .back-to-home {
+        position: fixed;
+        z-index: 999;
+    }
+    .project-landing {
+        margin-bottom: 50px;
+        padding-top: 40px;
+    }
+}
+
+@media(min-width: $desktopBreakpoint){
+    .project-page {
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+    }
+
+    .project-container {
+
+        .project-content{
+            padding:0 90px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .project-landing {
+            background-color:$blueShade;
+            display: flex;
+            align-items: center; 
+            border-radius: 10px;
+            height: 90vh;
+            margin-bottom: 70px;
+           
+            .project-headings{
+                text-align: left;
+                padding: 35px;
+
+                .project-buttons {
+                    text-align: left;
+                }
+            }
+            .feat-img {
+                height: 350px;
+
+            }
+        }
+
+        .group{
+            display: flex;
+            .project-members{
+                margin-left: 300px;
+            }
+        }
+
+    }
+}

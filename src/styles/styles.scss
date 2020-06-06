@@ -1,0 +1,21 @@
+// utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+
+// base
+@import "base/base";
+@import "base/resets";
+@import "base/fonts";
+
+// components
+@import "components/particles";
+@import "components/navmenu";
+@import "components/landing";
+@import "components/thumbnail";
+@import "components/about";
+@import "components/contact";
+@import "components/footer";
+
+// pages
+@import "pages/home";
+@import "pages/project";

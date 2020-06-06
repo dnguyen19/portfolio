@@ -1,0 +1,55 @@
+.home {
+    margin-bottom: 30px;
+    position: relative;
+
+    .page {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media(min-width: $tabletBreakpoint){
+    .home {
+        .page {
+            width: 80%;
+        }
+    }
+}
+
+@media(min-width: $tabletLargeBreakpoint){
+    .home {
+        .page {
+            width: 60%;
+        }
+    }
+}
+
+@media(min-width: $desktopBreakpoint){
+    .home {
+        display: flex;
+        margin-bottom: 0px;
+
+        .nav-menu { 
+            flex: 0 0 auto;
+        }
+
+        .page {
+            flex: 1 1 auto;
+            overflow: auto;
+            max-width: 1100px;
+            padding: 30px;
+        }
+        .content {
+            margin-bottom: 50px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(min-width: $desktopLargeBreakpoint){
+    .home {
+        .page{
+            padding: 0;
+        }
+    }
+}

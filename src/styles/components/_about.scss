@@ -1,0 +1,35 @@
+.skills{
+    color: $textColor;
+    margin-top: 40px;
+    h3 {
+        color: $blueColor;
+    }
+    .tech-skills {
+        h3 {
+            color: $blueColor;
+        }
+        ul {
+            columns: 2;
+        }
+    }
+
+    .design-skills{
+        h3 {
+            color: $blueColor;
+        }
+    }
+}
+
+@media(min-width: $desktopBreakpoint){
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+
+        .tech-skills{
+            ul {
+                width: 300px;
+            }
+        }
+    }
+}

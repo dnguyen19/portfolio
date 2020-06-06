@@ -1,0 +1,33 @@
+@mixin main-btn() {
+    border: 3px solid $blueColor;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 30px;
+    color:$blueColor;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+
+    // a {
+    //     color:$blueColor;
+    //     cursor: pointer;
+    //     font-weight: 600;
+        
+    // }
+}
+
+@mixin img-container(){
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 13px 10px 24px -8px rgba(0,0,0,0.26);
+    -moz-box-shadow: 13px 10px 24px -8px rgba(0,0,0,0.26);
+    box-shadow: 13px 10px 24px -8px rgba(0,0,0,0.26);
+}
+
+
+

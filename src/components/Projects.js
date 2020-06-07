@@ -43,14 +43,14 @@ const myProjects = [
 
 const Projects = (props) => {
     return (
-        <div>
+        <div id="projects">
             <Fade bottom>
                 <h1>Projects</h1>
                 <hr/>
             </Fade>
             
             <Thumbnail 
-               handlePosition={props.handlePosition} projects={myProjects}
+               projects={myProjects}
             />
                 
         </div>

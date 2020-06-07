@@ -4,11 +4,6 @@ import Fade from 'react-reveal/Fade';
 
 const Thumbnail = (props) => {
 
-      const handleClick = () => {
-        var position = window.pageYOffset;
-        props.handlePosition(position);
-      }
-
     return (
         <Fade bottom>
             {props.projects.map((project, i) => (
@@ -25,7 +20,7 @@ const Thumbnail = (props) => {
                         <div className="desc-container">
                             <p className="desc">{project.desc}</p>
                             <br/>
-                            <Link to={project.link} className="more-details-link" onClick={handleClick}>More Details</Link>
+                            <Link to={project.link} className="more-details-link">More Details</Link>
                         </div>
                         
                     </div>

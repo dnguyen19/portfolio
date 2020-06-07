@@ -9,21 +9,14 @@ import NavMenu from '../components/NavMenu';
 const Home = (props) => {
 
     // first set to 0, then set it to scroll position
-    const initialPosition = props.position;
-    const [scrollPosition, setSrollPosition] = useState(initialPosition);
+    // const initialPosition = props.position;
+    // const [scrollPosition, setSrollPosition] = useState(initialPosition);
 
     useEffect(() => {
         
-        window.scrollTo(0, scrollPosition);
+        window.scrollTo(0, 0);
 
-    }, [scrollPosition]);
-
-
-    const handleNewPosition = (position) => {
-        setSrollPosition(position);
-        console.log(position);
-        console.log(scrollPosition);
-    }
+    }, []);
 
       
     return (
@@ -33,7 +26,7 @@ const Home = (props) => {
             <div className="page">
                <Landing/>
                 <div className="content">
-                    <Projects handlePosition={handleNewPosition}/>
+                    <Projects/>
                     <About/>
                 </div>
                 <Contact/>

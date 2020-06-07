@@ -3,8 +3,7 @@ import Project from '../pages/Project';
 import scHome from '../images/showtime/showtime-home.png';
 import scMovie from '../images/showtime/showtime-movie.png';
 import scMobile from '../images/showtime/screenshots-mobile.png';
-import scHomeMobile from '../images/showtime/showtime-home-mobile.png';
-import scMovieMobile from '../images/showtime/showtime-movie-mobile.png';
+import scSearch from '../images/showtime/showtime-search.png';
 import mockup from '../images/showtime/mockups/mockup.png';
 
 const ShowtimeCode = `
@@ -52,8 +51,8 @@ const projectInfo = [
         members: null,
         mockups: [mockup],
         colours: ['#ecc880', '#1C1C1C', '#f8f8f8'],
-        screenshots: [scMobile, scHome, scMovie],
-        codeDesc: 'In this code, I used useState and useEffect to set variables and fetch the API. First time using the React Hooks apporach',
+        screenshots: [scMobile, scHome, scSearch, scMovie],
+        codeDesc: 'In this code, I used React Hooks to set variables and fetch the movie API.',
         codeSnippets: ShowtimeCode,
         liveSite: 'http://dnguyen.bcitwebdeveloper.ca/movie-app/',
         github: 'https://github.com/dnguyen19/showtime',

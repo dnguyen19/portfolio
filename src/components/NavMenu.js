@@ -5,7 +5,7 @@ class NavMenu extends Component {
     
     handleClick(e, section) {
         e.preventDefault();
-        const anchor = document.querySelector(section)
+        const anchor = document.querySelector(section);
         anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 

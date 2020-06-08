@@ -29,49 +29,39 @@ const SingleProject = (props) => {
 
                         
                             <section className="project-overview">
-                                <Fade bottom>
                                     <h2>Overview</h2>
                                     <hr/>
-                                </Fade>
-
-                                <Fade bottom>
                                     <p>{item.overview}</p>
-                                </Fade>
                             </section>
                         
 
                         
                         <div className="group">
                             <section className="project-tools">
-                                <Fade bottom>
-                                    <h2>Languages / Tools</h2>
-                                    <hr/>
-                                </Fade>
-
-                                <Fade bottom>
-                                    <ul>
+                                <h2>Languages / Tools</h2>
+                                <hr/>
+                            
+                                <ul>
                                     {item.tags.map((tags, i) => (
                                         <li>{tags}</li>
                                     ))} 
-                                    </ul>
-                                </Fade>
+                                </ul>
+                                
                                 
                             </section>
 
                             {item.members &&
                             <section className="project-members">
-                                <Fade bottom>
-                                    <h2>Development Team</h2>
-                                    <hr/>
-                                </Fade>
-
-                                <Fade bottom>
-                                    <ul>
-                                        {item.members.map((member, i) => (
-                                            <li>{member}</li>
-                                        ))}
-                                    </ul>
-                                </Fade>
+                                
+                                <h2>Development Team</h2>
+                                <hr/>
+                                
+                                <ul>
+                                    {item.members.map((member, i) => (
+                                        <li>{member}</li>
+                                    ))}
+                                </ul>
+                                
                             </section> 
                         }
                         </div>
@@ -80,26 +70,22 @@ const SingleProject = (props) => {
                         
                         {item.responsibilities &&
                             <section className="project-resp">
-                                <Fade bottom>
-                                    <h2>Responsibilities</h2>
-                                    <hr/>
-                                </Fade>
-                                <Fade bottom>
+                                <h2>Responsibilities</h2>
+                                <hr/>
+
                                 <ul>
                                     {item.responsibilities.map((responsibility, i) => (
                                         <li>{responsibility}</li>
                                     ))}
                                 </ul>
-                                </Fade>
+                                
                             </section> 
                             
                         }
                         
                         <section className="project-screenshots">
-                            <Fade bottom>
-                                <h2>Design</h2>
-                                <hr/>
-                            </Fade>
+                            <h2>Design</h2>
+                            <hr/>
 
                             <div className="screenshot-container">
                                     {item.colours &&
@@ -107,18 +93,16 @@ const SingleProject = (props) => {
                                             {item.colours.map((color, i) => (
 
                                                 <div>
-                                                    <Fade>
+                                                    
                                                     <span className="dot" style={{backgroundColor: color}}></span>
                                                     <p>{color}</p>
-                                                    </Fade>
+                                                    
                                                 </div>
                                             ))}
                                         </div>
                                     }
                                 {item.screenshots.map((img, i) => (
-                                    <Fade>
-                                        <img src={img}></img>
-                                    </Fade>
+                                    <img src={img}></img>
                             ))}
                             </div>
                             
@@ -126,16 +110,14 @@ const SingleProject = (props) => {
                         
                         
                         <section className="project-code">
-                            <Fade bottom>
                                 <h2>Code Snippet</h2>
                                 <hr/>
-                            </Fade>
-                            <Fade>
                                 <p>{item.codeDesc}</p>
+
                                 <SyntaxHighlighter language="javascript" style={tomorrowNight}>
                                     {item.codeSnippets}
                                 </SyntaxHighlighter>
-                            </Fade>
+                            
                         </section>
                         
 

@@ -28,11 +28,11 @@ const SingleProject = (props) => {
                         </div>
 
                         
-                            <section className="project-overview">
-                                    <h2>Overview</h2>
-                                    <hr/>
-                                    <p>{item.overview}</p>
-                            </section>
+                        <section className="project-overview">
+                                <h2>Overview</h2>
+                                <hr/>
+                                <p>{item.overview}</p>
+                        </section>
                         
 
                         

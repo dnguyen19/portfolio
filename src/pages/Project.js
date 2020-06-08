@@ -9,8 +9,8 @@ import {BsArrowLeft} from "react-icons/bs";
 const Project = (props) => {
     
     useEffect(() => {
-        window.scroll(0, 0)
-      }, []);
+        window.scrollTo(0, 0);
+    }, []);
       
     return (
         <div>

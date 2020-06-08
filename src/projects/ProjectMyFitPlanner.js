@@ -73,7 +73,7 @@ export default class ListItem extends Component {
 const projectInfo = [
     {
         title: "MyFitPlanner",
-        shortDesc: "A mobile application that lets you plan out your workouts. Includes a login system, create workout logs, and GPS to locate the nearest gym around you.",
+        shortDesc: "A mobile application that lets you plan out your workouts. Includes a login system, personalized workout logs, and GPS to locate the nearest gym around you.",
         tags: ['React Native', 'Firebase', 'Expo', 'Google Maps API', 'Git'],
         featuredImg: MyFitPlannerImg,
         overview: 'MyFitPlanner was built with React Native and Firebase for a collaborative group project at Computer Information Technology at BCIT. MyFitPlanner is a fitness mobile application that lets you plan out and keep track of your workouts.  After completion, the MyFitPlanner is now available on Google Play.',

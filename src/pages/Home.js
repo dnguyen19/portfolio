@@ -9,7 +9,6 @@ import NavMenu from '../components/NavMenu';
 const Home = () => {
 
     useEffect(() => {
-        
         window.scrollTo(0, 0);
 
     }, []);
@@ -28,7 +27,12 @@ const Home = () => {
                 <Contact/>
                 <Footer/> 
             </div>
-            
+            {/* <div id="preload" style={{display: 'none'}}>
+                <img src={imgPortfolio} />
+                <img src={imgShowtime} />
+                <img src={imgGame} />
+                <img src={imgFitness} />
+            </div> */}
         </div>
     );
 }

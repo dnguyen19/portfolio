@@ -2,11 +2,6 @@ import React from 'react';
 import Project from '../pages/Project';
 import MyFitPlannerImg from '../images/myfitplanner/myfitplanner.png';
 import MyFitPlannerSc from '../images/myfitplanner/screenshots-myfitplanner.png';
-import scLogin from '../images/myfitplanner/screenshots/login.PNG';
-import scHome from '../images/myfitplanner/screenshots/home.PNG'
-import scAddLog from '../images/myfitplanner/screenshots/addlog.png';
-import scWorkout from '../images/myfitplanner/screenshots/workouts.png';
-import scGPS from '../images/myfitplanner/screenshots/gps.png';
 
 const MyFitPlannerCode = `
 export default class ListItem extends Component {

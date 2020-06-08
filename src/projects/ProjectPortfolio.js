@@ -49,7 +49,7 @@ const projectInfo = [
         screenshots: [mcHome, mcProjects],
         codeDesc: 'The code below shows how I created a navigation bar where it will scroll to the anchor tag.',
         codeSnippets: code,
-        liveSite: 'denisenguyen.ca/',
+        liveSite: 'https://denisenguyen.ca/',
         github: 'https://github.com/dnguyen19/portfolio',
     }
 ]

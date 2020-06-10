@@ -14,7 +14,9 @@ const Thumbnail = (props) => {
                     <div className="project-content">
                         <h2 className="title">{project.title}</h2>
                         <div className="tags">
-                            <p>{project.tags}</p>
+                            {project.tags.map((tags, i) => (
+                                <p>{tags}</p>
+                            ))} 
                         </div>
                         
                         <div className="desc-container">

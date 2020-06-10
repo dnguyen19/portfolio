@@ -8,10 +8,19 @@
     .tags {
         display: flex;
         p {
+            background-color: $blueShade;
             text-align: center;
             border-radius: 50px;
-            font-weight: 300;
+            padding: 5px 20px;
+            margin-right: 20px;
+            font-size: .8em;
+            margin-bottom: 30px;
         }
+    }
+
+    .desc {
+        font-weight: 300;
+        font-size: 1.1em;
     }
 
 
@@ -29,21 +38,12 @@
 
         &:nth-child(odd){
             flex-direction: row-reverse;
-            .project-content{
-                text-align: left;
-                .tags {
-                    justify-content: flex-start;
-                    margin: 0 20px;
-                }
-                .desc-container {
-                    left: 10px;
-                }
-            }
         }
+
         .thumbnail-img {
             margin: 0 30px;
-            width: 650px;
-            height: 400px;
+            width: 550px;
+            height: 350px;
             flex-grow: 2;
                 transition: transform 0.5s; 
             &:hover {
@@ -55,35 +55,32 @@
         .project-content{
             flex-grow: 1;
             width: 400px;
-            margin: 50px 10px;
+            margin: 20px 10px;
             margin-bottom: 0;
-            text-align: right;
             .title {
-                padding: 0 20px;
+                font-size: 2em;
             }
 
-            .tags {
-                justify-content: flex-end;
-                margin: 0 20px;
-            }
-
-            .desc-container {
-                margin-top: 40px;
-                position: absolute;
-                background-color: $blueShade;
-                padding: 20px;
-                border-radius: 10px;
-                max-width: 500px;
-                right: 10px;
-
-                .more-details-link {
-                    border: none;
-                    padding: 10px 0;
-                    &:hover {
-                        text-decoration: underline;
-                    }
+            // on hover animation -> https://codepen.io/martinwolf/pen/eNNdme
+            .more-details-link {
+                display: inline-block;
+                border: none;
+                padding: 10px 0;
+                &::after {
+                    content: '';
+                    margin-top: 10px;
+                    display: block;
+                    width: 55px;
+                    height: 3px;
+                    background: $blueColor;
+                    transition: width .3s;
+                }
+                &:hover::after {
+                    width: 100%;
+                    //transition: width .3s;
                 }
             }
         }
     }
 }
+

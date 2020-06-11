@@ -21,6 +21,9 @@
     position: relative;
 
     .content {
+        p , li{
+            line-height: 1.7em;
+        }
         hr{
             margin-bottom: 20px;
         }
@@ -83,6 +86,9 @@
 }
 
 @media(min-width: $tabletBreakpoint){
+    .project-page{
+        max-width: 600px;
+    }
     .back-to-home {
         position: fixed;
         z-index: 999;
@@ -114,32 +120,15 @@
             padding-top: 20px;
             margin-bottom: 70px;
         }
-        // .project-landing {
-        //     background-color:$blueShade;
-        //     display: flex;
-        //     align-items: center; 
-        //     border-radius: 10px;
-        //     height: 90vh;
-        //     margin-bottom: 70px;
-           
-        //     .project-headings{
-        //         text-align: left;
-        //         padding: 35px;
-
-        //         .project-buttons {
-        //             text-align: left;
-        //         }
-        //     }
-        //     .feat-img {
-        //         height: 350px;
-
-        //     }
-        // } 
 
         .group{
             display: flex;
             .project-members{
                 margin-left: 300px;
+            }
+            .project-overview{
+                max-width: 550px;
+                margin-right: 150px;
             }
         }
 

@@ -14,9 +14,9 @@ class NavMenu extends Component {
                 <div className="nav-menu">
                   <nav>
                     <ul>
-                      <li onClick={(e) => this.handleClick(e, '#landing' )}><BsHouseFill/></li>
-                      <li onClick={(e) => this.handleClick(e, '#projects' )}><BsCodeSlash/></li>
-                      <li onClick={(e) => this.handleClick(e, '#about' )}><BsFillPersonFill/></li>
+                      <li onClick={(e) => this.handleClick(e, '#landing' )}><BsHouseFill title="Home"/></li>
+                      <li onClick={(e) => this.handleClick(e, '#projects' )}><BsCodeSlash title="Projects"/></li>
+                      <li onClick={(e) => this.handleClick(e, '#about' )}><BsFillPersonFill title="About"/></li>
                     </ul>
                   </nav>
                 </div>

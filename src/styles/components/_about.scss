@@ -1,3 +1,6 @@
+.about-bio {
+    line-height: 1.7em;
+}
 .skills{
     color: $textColor;
     margin-top: 40px;
@@ -5,11 +8,13 @@
         color: $blueColor;
     }
     .tech-skills {
+        margin-bottom: 40px;
         h3 {
             color: $blueColor;
         }
         ul {
             columns: 2;
+            line-height: 1.7em;
         }
     }
 
@@ -17,18 +22,27 @@
         h3 {
             color: $blueColor;
         }
+        ul {
+            line-height: 1.7em;
+        }
     }
 }
 
 @media(min-width: $desktopBreakpoint){
-    .skills {
+    .about-content {
         display: flex;
-        justify-content: space-between;
-        max-width: 600px;
+        .about-bio {
+            max-width: 700px;
+            margin-right: 90px;
+        }
 
-        .tech-skills{
-            ul {
-                width: 300px;
+        .skills {
+            margin-top: 0;
+    
+            .tech-skills{
+                ul {
+                    width: 300px;
+                }
             }
         }
     }

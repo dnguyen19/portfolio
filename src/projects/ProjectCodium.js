@@ -1,5 +1,9 @@
 import React from 'react';
 import Project from '../pages/Project';
+import styleGuide from '../images/codium/style.png';
+import scAbout from '../images/codium/about.png';
+import scCourse from '../images/codium/course.png';
+import scInstructor from '../images/codium/instructor.png';
 
 const CodiumCode = `
 export default class ListItem extends Component {
@@ -77,7 +81,7 @@ const projectInfo = [
         overview: 'Codium was built with WordPress and PHP for a collaborative group project at BCIT’s Technical Web Designer program. The website is an online coding school that offers courses such as HTML, JavaScript, Python, and many more. The courses are offered in the form of videos, quizzes, and supplemental materials for students to download. In order to do that, my team and I used Woocommerce and Sensei to implement that feature. The design is professional and trustworthy but also warm and welcoming for new students.',
         responsibilities: ['Contributed in making wireframes', 'Created courses using Sensei LMS plugin', 'Connected courses to Woocommerce products', 'Developed and styled courses page' ],
         members: ['Darrien Chow', 'Tin Lau', 'Wynonna Moo', 'Tiffany Tang'],
-        screenshots: [],
+        screenshots: [styleGuide, scAbout, scCourse, scInstructor],
         codeDesc: '',
         codeSnippets: CodiumCode,
         liveSite: 'https://codium.bcitwebdeveloper.ca',

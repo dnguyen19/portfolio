@@ -27,16 +27,13 @@ const SingleProject = (props) => {
                             </Fade>
                         </div>
 
-                        
+                        <div className="group">
                         <section className="project-overview">
                                 <h2>Overview</h2>
                                 <hr/>
                                 <p>{item.overview}</p>
                         </section>
                         
-
-                        
-                        <div className="group">
                             <section className="project-tools">
                                 <h2>Languages / Tools</h2>
                                 <hr/>
@@ -46,9 +43,23 @@ const SingleProject = (props) => {
                                         <li>{tags}</li>
                                     ))} 
                                 </ul>
-                                
-                                
                             </section>
+                        </div>
+
+                        {item.responsibilities &&
+                            <section className="project-resp">
+                                <h2>Responsibilities</h2>
+                                <hr/>
+
+                                <ul>
+                                    {item.responsibilities.map((responsibility, i) => (
+                                        <li>{responsibility}</li>
+                                    ))}
+                                </ul>
+                                
+                            </section> 
+                            
+                        }
 
                             {item.members &&
                             <section className="project-members">
@@ -63,24 +74,6 @@ const SingleProject = (props) => {
                                 </ul>
                                 
                             </section> 
-                        }
-                        </div>
-                        
-
-                        
-                        {item.responsibilities &&
-                            <section className="project-resp">
-                                <h2>Responsibilities</h2>
-                                <hr/>
-
-                                <ul>
-                                    {item.responsibilities.map((responsibility, i) => (
-                                        <li>{responsibility}</li>
-                                    ))}
-                                </ul>
-                                
-                            </section> 
-                            
                         }
                         
                         <section className="project-screenshots">

@@ -7,13 +7,14 @@ import scSearch from '../images/showtime/showtime-search.png';
 import mockup from '../images/showtime/mockups/mockup.png';
 
 const ShowtimeCode = `
+    // set state
     const initalSortBy = props.sort;
     const [sort, setSort] = useState(initalSortBy);
     const [movieData, setMovieData] = useState(null);
     const [genreData, setGenreData] = useState(null);
 
     useEffect(() => {
-        
+        // fetch API movie
         const fetchMovies = async () =>{
             // correct syntax is $ before {}
             const res = await fetch('{API_URL_REQUEST_MOVIE}{sort}{API_KEY}{LANGUAGE}');
@@ -22,6 +23,7 @@ const ShowtimeCode = `
             setMovieData(movieData.results);
         }
         
+        // fetch API movie genre
         const fetchGenre = async () => {
             const res = await fetch('{API_URL_REQUEST_GENRE}');
             const data = await res.json();
@@ -33,10 +35,6 @@ const ShowtimeCode = `
         fetchGenre();
     }, [sort]);
 
-    const handleSortChange = (sortby) => {
-        setSort(sortby);
-    }
-    
 `
 
 const projectInfo = [
@@ -46,7 +44,7 @@ const projectInfo = [
         shortDesc: "A dynamic movie website for displaying movies, their ratings and synopsis. Uses The Movie DB API for fetching and displaying the movie data.",
         tags: ['React', 'Sass', 'Adobe Photoshop 2020'],
         featuredImg: mockup,
-        overview: 'Showtime is a dynamic movie website built with React.js and Sass. The movie web application uses The Movie DB API for fetching and displaying movie data but is not endorsed or certified by TMDb. For this project, I developed a live version based on the mockups I created using Adobe Photoshop. I implemented a search feature and a personalized favourite feature where the user can add and remove their favourite movies that are stored on their browser’s local storage.',
+        overview: "Showtime is a dynamic movie website built with React.js and Sass. The movie web application uses The Movie DB API for fetching and displaying movie data but is not endorsed or certified by TMDb. For this project, I developed a live version based on the mockups I created using Adobe Photoshop. I implemented a search feature and a personalized favourite feature where the user can add and remove their favourite movies. The user's favourite movies are stored on their web browser’s local storage.",
         responsibilities: null,
         members: null,
         mockups: [mockup],

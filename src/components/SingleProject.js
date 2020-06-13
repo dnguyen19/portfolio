@@ -16,14 +16,21 @@ const SingleProject = (props) => {
                             <div className=" project-headings">
                                 <h1>{item.title}</h1>
                                 <p>{item.shortDesc}</p>
-                                                    
-                                <div className=" project-buttons">
-                                        <a href={item.liveSite} target="_blank">Visit Live</a>
-                                        <a href={item.github} target="_blank">GitHub</a>
-                                </div>
+
+                                {(item.liveSite && item.github) &&     
+                                    <div className=" project-buttons">
+                                        <a href={item.liveSite} target="_blank" rel="noopener">Visit Live</a>
+                                        <a href={item.github} target="_blank" rel="noopener">GitHub</a>
+                                    </div>
+                                }
                             </div>
                             
-                            <img className="feat-img" src={item.featuredImg} alt="Project featured image"></img>
+                            {item.featuredImg ?                             
+                                <img className="feat-img" src={item.featuredImg} alt="Project featured image"></img> :
+                                <div className="feat-img-placeholder" style={{backgroundColor: '#1E2C3C'}}>
+                                    <h3>COMING SOON</h3>
+                                </div>
+                            }
                             </Fade>
                         </div>
 
@@ -84,18 +91,15 @@ const SingleProject = (props) => {
                                     {item.colours &&
                                         <div className="colour-scheme">
                                             {item.colours.map((color, i) => (
-
                                                 <div>
-                                                    
                                                     <span className="dot" style={{backgroundColor: color}}></span>
                                                     <p>{color}</p>
-                                                    
                                                 </div>
                                             ))}
                                         </div>
                                     }
                                 {item.screenshots.map((img, i) => (
-                                    <img src={img}></img>
+                                    <img src={img} alt='project screenshot'></img>
                             ))}
                             </div>
                             

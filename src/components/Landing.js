@@ -19,7 +19,7 @@ const Landing = () => {
                     </Fade>
 
                     <Fade bottom delay={850}>
-                        <h3>A Front-end Developer based in Vancouver, BC</h3>
+                        <h3>A Front-End Web Developer based in Vancouver, BC</h3>
                     </Fade>
                         
                     

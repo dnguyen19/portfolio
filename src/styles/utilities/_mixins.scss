@@ -7,13 +7,6 @@
     cursor: pointer;
     font-weight: 600;
     text-decoration: none;
-
-    // a {
-    //     color:$blueColor;
-    //     cursor: pointer;
-    //     font-weight: 600;
-        
-    // }
 }
 
 @mixin img-container(){
@@ -27,6 +20,12 @@
     -webkit-box-shadow: 13px 10px 24px -8px rgba(0,0,0,0.26);
     -moz-box-shadow: 13px 10px 24px -8px rgba(0,0,0,0.26);
     box-shadow: 13px 10px 24px -8px rgba(0,0,0,0.26);
+}
+
+@mixin projectShortDesc() {
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
 
 

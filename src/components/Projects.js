@@ -4,6 +4,7 @@ import ShowtimeImg from '../images/showtime/showtime-thumbnail.png';
 import SpaceMatchImg from '../images/space-match/space-match-splash.png';
 import MyFitPlannerImg from '../images/myfitplanner/myfitplanner.png';
 import PortfolioImg from '../images/portfolio/portfolio-thumbnail.png';
+import CodiumImg from '../images/codium/codium-home.png';
 import Fade from 'react-reveal/Fade';
 
 
@@ -18,9 +19,9 @@ const myProjects = [
     },
     {
         title:"Codium",
-        tags: ['Wordpress', 'PHP', 'Sass'],
+        tags: ['WordPress', 'PHP', 'Sass'],
         desc:"An online coding school website that sells online courses that teach various coding languages. The website is built for educational purposes only (not legitimate).",
-        featImg: '',
+        featImg: CodiumImg,
         link:"/codium"
     },
     {

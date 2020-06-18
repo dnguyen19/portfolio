@@ -16,13 +16,16 @@ const SingleProject = (props) => {
                             <div className=" project-headings">
                                 <h1>{item.title}</h1>
                                 <p>{item.shortDesc}</p>
-
-                                {(item.liveSite && item.github) &&     
+       
                                     <div className=" project-buttons">
-                                        <a href={item.liveSite} target="_blank" rel="noopener">Visit Live</a>
-                                        <a href={item.github} target="_blank" rel="noopener">GitHub</a>
+                                        {(item.liveSite) &&     
+                                            <a href={item.liveSite} target="_blank" rel="noopener" style={{color:'#111822'}}>Visit Live</a>
+                                        }
+
+                                        {( item.github) &&    
+                                            <a href={item.github} target="_blank" rel="noopener">GitHub</a>
+                                        }
                                     </div>
-                                }
                             </div>
                             
                             {item.featuredImg ?                             

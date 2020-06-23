@@ -33,11 +33,11 @@ const Home = () => {
             </div>
 
             <div className="preload">
-                <img src={imgPortfolio} />
-                <img src={imgShowtime} />
-                <img src={imgGame} />
-                <img src={imgFitness} />
-                <img src={imgCodium} />
+                <img src={imgPortfolio} alt="preload portfolio mockup" />
+                <img src={imgShowtime} alt="preload showtime mockup"/>
+                <img src={imgGame} alt="preload game mockup"/>
+                <img src={imgFitness} alt="preload fitness app mockup"/>
+                <img src={imgCodium} alt="preload codium mockup"/>
             </div>
             
         </div>

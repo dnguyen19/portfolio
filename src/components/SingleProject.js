@@ -19,17 +19,17 @@ const SingleProject = (props) => {
        
                                     <div className=" project-buttons">
                                         {(item.liveSite) &&     
-                                            <a href={item.liveSite} target="_blank" rel="nofollow noopener" style={{color:'#111822'}}>Visit Live</a>
+                                            <a href={item.liveSite} target="_blank" rel="noopener noreferrer" style={{color:'#111822'}}>Visit Live</a>
                                         }
 
                                         {( item.github) &&    
-                                            <a href={item.github} target="_blank" rel="nofollow noopener">GitHub</a>
+                                            <a href={item.github} target="_blank" rel="noopener noreferrer">GitHub</a>
                                         }
                                     </div>
                             </div>
                             
                             {item.featuredImg ?                             
-                                <img className="feat-img" src={item.featuredImg} alt="Project featured image"></img> :
+                                <img className="feat-img" src={item.featuredImg} alt="Project featured mockup"></img> :
                                 <div className="feat-img-placeholder" style={{backgroundColor: '#1E2C3C'}}>
                                     <h3>COMING SOON</h3>
                                 </div>

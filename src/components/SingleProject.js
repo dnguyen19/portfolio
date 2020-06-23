@@ -19,11 +19,11 @@ const SingleProject = (props) => {
        
                                     <div className=" project-buttons">
                                         {(item.liveSite) &&     
-                                            <a href={item.liveSite} target="_blank" rel="noopener" style={{color:'#111822'}}>Visit Live</a>
+                                            <a href={item.liveSite} target="_blank" rel="nofollow noopener" style={{color:'#111822'}}>Visit Live</a>
                                         }
 
                                         {( item.github) &&    
-                                            <a href={item.github} target="_blank" rel="noopener">GitHub</a>
+                                            <a href={item.github} target="_blank" rel="nofollow noopener">GitHub</a>
                                         }
                                     </div>
                             </div>

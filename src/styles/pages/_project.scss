@@ -3,6 +3,7 @@
     width:80%;
     margin: 0 auto;
 }
+
 .back-to-home a {
     color: $blueColor;
     text-decoration: none;
@@ -30,6 +31,12 @@
 
         section {
             margin-bottom: 70px;
+
+            h2 {
+                font-size: 1.3em;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
         }
 
         .project-headings {
@@ -154,5 +161,16 @@
             }
         }
 
+    }
+}
+
+@media(min-width: $desktopLargeBreakpoint){
+    .back-to-home a {
+        svg {
+            margin-top: 10px;
+            width: 70px;
+            height: 70px;
+        }
+        
     }
 }

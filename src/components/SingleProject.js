@@ -37,14 +37,14 @@ const SingleProject = (props) => {
                             </Fade>
                         </div>
 
-                        <div className="group">
-                        <section className="project-overview">
+                        <section className="group">
+                            <article className="project-overview">
                                 <h2>Overview</h2>
                                 <hr/>
                                 <p>{item.overview}</p>
-                        </section>
+                            </article>
                         
-                            <section className="project-tools">
+                            <article className="project-tools">
                                 <h2>Languages / Tools</h2>
                                 <hr/>
                             
@@ -53,8 +53,8 @@ const SingleProject = (props) => {
                                         <li>{tags}</li>
                                     ))} 
                                 </ul>
-                            </section>
-                        </div>
+                            </article>
+                        </section>
 
                         {item.responsibilities &&
                             <section className="project-resp">
@@ -73,38 +73,34 @@ const SingleProject = (props) => {
 
                             {item.members &&
                             <section className="project-members">
-                                
                                 <h2>Development Team</h2>
                                 <hr/>
-                                
                                 <ul>
                                     {item.members.map((member, i) => (
                                         <li>{member}</li>
                                     ))}
                                 </ul>
-                                
                             </section> 
                         }
                         
                         <section className="project-screenshots">
                             <h2>Design</h2>
                             <hr/>
-
-                            <div className="screenshot-container">
+                            <article className="screenshot-container">
                                     {item.colours &&
                                         <div className="colour-scheme">
                                             {item.colours.map((color, i) => (
-                                                <div>
+                                                <figure>
                                                     <span className="dot" style={{backgroundColor: color}}></span>
                                                     <p>{color}</p>
-                                                </div>
+                                                </figure>
                                             ))}
                                         </div>
                                     }
                                 {item.screenshots.map((img, i) => (
                                     <img src={img} alt='project screenshot'></img>
                             ))}
-                            </div>
+                            </article>
                             
                         </section>
                         

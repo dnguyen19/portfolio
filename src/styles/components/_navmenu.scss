@@ -60,7 +60,7 @@
 
 @media(min-width: $desktopBreakpoint){
     .nav-menu{
-        width: auto;
+        width: 70px;
         height: 100vh;
         position: static;
         
@@ -97,10 +97,10 @@
 
 @media(min-width: $desktopLargeBreakpoint){
     .nav-menu{
-        width: 70px;
+        width: 80px;
         
         nav {
-            width: 90px;
+            width: 80px;
             
             svg {
                 height: 27px;

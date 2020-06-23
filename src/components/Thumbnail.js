@@ -7,14 +7,14 @@ const Thumbnail = (props) => {
     return (
         <Fade bottom>
             {props.projects.map((project, i) => (
-                <div className="thumbnail" id={project.id}>
+                <article className="thumbnail" id={project.id}>
 
                     <Link to={project.link} style={{textDecoration: 'none'}}>
                         {project.featImg ? 
-                            <div className="thumbnail-img" style={{backgroundImage: 'url('+project.featImg+')', backgroundColor: '#f5f5f5'}}></div> :
-                            <div className="thumbnail-img" style={{backgroundColor: '#1E2C3C'}}>
+                            <figure className="thumbnail-img" style={{backgroundImage: 'url('+project.featImg+')', backgroundColor: '#f5f5f5'}}></figure> :
+                            <figure className="thumbnail-img" style={{backgroundColor: '#1E2C3C'}}>
                                 <h3>COMING SOON</h3>
-                            </div>
+                            </figure>
                         }
                     </Link>
 
@@ -34,7 +34,7 @@ const Thumbnail = (props) => {
                         
                     </div>
                     
-                </div>
+                </article>
             ))}
         
             

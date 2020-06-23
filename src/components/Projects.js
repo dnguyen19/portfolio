@@ -50,7 +50,7 @@ const myProjects = [
 
 const Projects = (props) => {
     return (
-        <div id="projects">
+        <section id="projects">
             <Fade bottom>
                 <h1>Projects</h1>
                 <hr/>
@@ -60,7 +60,7 @@ const Projects = (props) => {
                projects={myProjects}
             />
                 
-        </div>
+        </section>
     );
 }
 
